@@ -29,3 +29,6 @@ jobs:
           pytest -s tests/test_train.py
         env:
           PYTHONPATH: .
+
+      - name: Run Quantization
+        run: python src/quantize.py
